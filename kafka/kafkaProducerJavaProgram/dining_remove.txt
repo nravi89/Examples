@@ -1,0 +1,13 @@
+{
+"action":"remove",
+"removeRequest":{
+  "shipSailDate":"RA20170309",
+  "guestID":"191919", 
+  "ownerGuestID":"957807488",
+  "ownerReservationID":"3567890957807488",
+  "sourceSystemApplicationID":"SILVERWHERE",
+  "sourcesystemOfferingID":"CHOPDNNER01"
+
+}
+}
+}
