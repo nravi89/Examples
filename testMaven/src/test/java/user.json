@@ -1,0 +1,1238 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "userData"
+  ],
+  "properties": {
+    "userData": {
+      "$id": "#/properties/userData",
+      "type": "array",
+      "title": "The Userdata Schema",
+      "items": {
+        "$id": "#/properties/userData/items",
+        "type": "object",
+        "title": "The Items Schema",
+        "required": [
+          "user",
+          "providerAccount"
+        ],
+        "properties": {
+          "user": {
+            "$id": "#/properties/userData/items/properties/user",
+            "type": "object",
+            "title": "The User Schema",
+            "required": [
+              "loginName"
+            ],
+            "properties": {
+              "loginName": {
+                "$id": "#/properties/userData/items/properties/user/properties/loginName",
+                "type": "string",
+                "title": "The Loginname Schema",
+                "default": "",
+                "examples": [
+                  "SanityInt1560233325569"
+                ],
+                "pattern": "^(.*)$"
+              }
+            }
+          },
+          "providerAccount": {
+            "$id": "#/properties/userData/items/properties/providerAccount",
+            "type": "array",
+            "title": "The Provideraccount Schema",
+            "items": {
+              "$id": "#/properties/userData/items/properties/providerAccount/items",
+              "type": "object",
+              "title": "The Items Schema",
+              "required": [
+                "lastUpdated",
+                "createdDate",
+                "refreshInfo",
+                "aggregationSource",
+                "isDeleted",
+                "providerId",
+                "isManual",
+                "id"
+              ],
+              "properties": {
+                "lastUpdated": {
+                  "$id": "#/properties/userData/items/properties/providerAccount/items/properties/lastUpdated",
+                  "type": "string",
+                  "title": "The Lastupdated Schema",
+                  "default": "",
+                  "examples": [
+                    "2019-06-11T06:09:14Z"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "createdDate": {
+                  "$id": "#/properties/userData/items/properties/providerAccount/items/properties/createdDate",
+                  "type": "string",
+                  "title": "The Createddate Schema",
+                  "default": "",
+                  "examples": [
+                    "2019-06-11"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "refreshInfo": {
+                  "$id": "#/properties/userData/items/properties/providerAccount/items/properties/refreshInfo",
+                  "type": "object",
+                  "title": "The Refreshinfo Schema",
+                  "required": [
+                    "nextRefreshScheduled",
+                    "lastRefreshed",
+                    "lastRefreshAttempt",
+                    "statusMessage",
+                    "statusCode",
+                    "status"
+                  ],
+                  "properties": {
+                    "nextRefreshScheduled": {
+                      "$id": "#/properties/userData/items/properties/providerAccount/items/properties/refreshInfo/properties/nextRefreshScheduled",
+                      "type": "string",
+                      "title": "The Nextrefreshscheduled Schema",
+                      "default": "",
+                      "examples": [
+                        "2019-06-12T05:09:07Z"
+                      ],
+                      "pattern": "^(.*)$"
+                    },
+                    "lastRefreshed": {
+                      "$id": "#/properties/userData/items/properties/providerAccount/items/properties/refreshInfo/properties/lastRefreshed",
+                      "type": "string",
+                      "title": "The Lastrefreshed Schema",
+                      "default": "",
+                      "examples": [
+                        "2019-06-11T06:09:10Z"
+                      ],
+                      "pattern": "^(.*)$"
+                    },
+                    "lastRefreshAttempt": {
+                      "$id": "#/properties/userData/items/properties/providerAccount/items/properties/refreshInfo/properties/lastRefreshAttempt",
+                      "type": "string",
+                      "title": "The Lastrefreshattempt Schema",
+                      "default": "",
+                      "examples": [
+                        "2019-06-11T06:09:10Z"
+                      ],
+                      "pattern": "^(.*)$"
+                    },
+                    "statusMessage": {
+                      "$id": "#/properties/userData/items/properties/providerAccount/items/properties/refreshInfo/properties/statusMessage",
+                      "type": "string",
+                      "title": "The Statusmessage Schema",
+                      "default": "",
+                      "examples": [
+                        "OK"
+                      ],
+                      "pattern": "^(.*)$"
+                    },
+                    "statusCode": {
+                      "$id": "#/properties/userData/items/properties/providerAccount/items/properties/refreshInfo/properties/statusCode",
+                      "type": "integer",
+                      "title": "The Statuscode Schema",
+                      "default": 0,
+                      "examples": [
+                        0
+                      ]
+                    },
+                    "status": {
+                      "$id": "#/properties/userData/items/properties/providerAccount/items/properties/refreshInfo/properties/status",
+                      "type": "string",
+                      "title": "The Status Schema",
+                      "default": "",
+                      "examples": [
+                        "SUCCESS"
+                      ],
+                      "pattern": "^(.*)$"
+                    }
+                  }
+                },
+                "aggregationSource": {
+                  "$id": "#/properties/userData/items/properties/providerAccount/items/properties/aggregationSource",
+                  "type": "string",
+                  "title": "The Aggregationsource Schema",
+                  "default": "",
+                  "examples": [
+                    "USER"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "isDeleted": {
+                  "$id": "#/properties/userData/items/properties/providerAccount/items/properties/isDeleted",
+                  "type": "boolean",
+                  "title": "The Isdeleted Schema",
+                  "default": false,
+                  "examples": [
+                    false
+                  ]
+                },
+                "providerId": {
+                  "$id": "#/properties/userData/items/properties/providerAccount/items/properties/providerId",
+                  "type": "integer",
+                  "title": "The Providerid Schema",
+                  "default": 0,
+                  "examples": [
+                    16441
+                  ]
+                },
+                "isManual": {
+                  "$id": "#/properties/userData/items/properties/providerAccount/items/properties/isManual",
+                  "type": "boolean",
+                  "title": "The Ismanual Schema",
+                  "default": false,
+                  "examples": [
+                    false
+                  ]
+                },
+                "id": {
+                  "$id": "#/properties/userData/items/properties/providerAccount/items/properties/id",
+                  "type": "integer",
+                  "title": "The Id Schema",
+                  "default": 0,
+                  "examples": [
+                    454475
+                  ]
+                }
+              }
+            }
+          },
+          "account": {
+            "$id": "#/properties/userData/items/properties/account",
+            "type": "array",
+            "title": "The Account Schema",
+            "items": {
+              "$id": "#/properties/userData/items/properties/account/items",
+              "type": "object",
+              "title": "The Items Schema",
+              "required": [
+                "availableCash",
+                "includeInNetWorth",
+                "accountName",
+                "dueDate",
+                "accountStatus",
+                "refreshinfo",
+                "lastUpdated",
+                "isAsset",
+                "aggregationSource",
+                "balance",
+                "isDeleted",
+                "totalCashLimit",
+                "providerId",
+                "lastPaymentDate",
+                "lastPaymentAmount",
+                "id",
+                "totalCreditLine",
+                "providerName",
+                "minimumAmountDue",
+                "apr",
+                "availableCredit",
+                "holderProfile",
+                "accountType",
+                "isManual",
+                "classification",
+                "accountNumber",
+                "amountDue",
+                "createdDate",
+                "providerAccountId",
+                "CONTAINER",
+                "runningBalance"
+              ],
+              "properties": {
+                "availableCash": {
+                  "$id": "#/properties/userData/items/properties/account/items/properties/availableCash",
+                  "type": "object",
+                  "title": "The Availablecash Schema",
+                  "required": [
+                    "amount",
+                    "currency"
+                  ],
+                  "properties": {
+                    "amount": {
+                      "$id": "#/properties/userData/items/properties/account/items/properties/availableCash/properties/amount",
+                      "type": "integer",
+                      "title": "The Amount Schema",
+                      "default": 0,
+                      "examples": [
+                        5500
+                      ]
+                    },
+                    "currency": {
+                      "$id": "#/properties/userData/items/properties/account/items/properties/availableCash/properties/currency",
+                      "type": "string",
+                      "title": "The Currency Schema",
+                      "default": "",
+                      "examples": [
+                        "USD"
+                      ],
+                      "pattern": "^(.*)$"
+                    }
+                  }
+                },
+                "includeInNetWorth": {
+                  "$id": "#/properties/userData/items/properties/account/items/properties/includeInNetWorth",
+                  "type": "boolean",
+                  "title": "The Includeinnetworth Schema",
+                  "default": false,
+                  "examples": [
+                    true
+                  ]
+                },
+                "accountName": {
+                  "$id": "#/properties/userData/items/properties/account/items/properties/accountName",
+                  "type": "string",
+                  "title": "The Accountname Schema",
+                  "default": "",
+                  "examples": [
+                    "Dag Credit Card"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "dueDate": {
+                  "$id": "#/properties/userData/items/properties/account/items/properties/dueDate",
+                  "type": "string",
+                  "title": "The Duedate Schema",
+                  "default": "",
+                  "examples": [
+                    "2018-11-05"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "accountStatus": {
+                  "$id": "#/properties/userData/items/properties/account/items/properties/accountStatus",
+                  "type": "string",
+                  "title": "The Accountstatus Schema",
+                  "default": "",
+                  "examples": [
+                    "ACTIVE"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "refreshinfo": {
+                  "$id": "#/properties/userData/items/properties/account/items/properties/refreshinfo",
+                  "type": "object",
+                  "title": "The Refreshinfo Schema",
+                  "required": [
+                    "lastRefreshed",
+                    "nextRefreshScheduled",
+                    "lastRefreshAttempt",
+                    "statusMessage",
+                    "statusCode"
+                  ],
+                  "properties": {
+                    "lastRefreshed": {
+                      "$id": "#/properties/userData/items/properties/account/items/properties/refreshinfo/properties/lastRefreshed",
+                      "type": "string",
+                      "title": "The Lastrefreshed Schema",
+                      "default": "",
+                      "examples": [
+                        "2019-06-11T06:09:10Z"
+                      ],
+                      "pattern": "^(.*)$"
+                    },
+                    "nextRefreshScheduled": {
+                      "$id": "#/properties/userData/items/properties/account/items/properties/refreshinfo/properties/nextRefreshScheduled",
+                      "type": "string",
+                      "title": "The Nextrefreshscheduled Schema",
+                      "default": "",
+                      "examples": [
+                        "2019-06-12T05:09:07Z"
+                      ],
+                      "pattern": "^(.*)$"
+                    },
+                    "lastRefreshAttempt": {
+                      "$id": "#/properties/userData/items/properties/account/items/properties/refreshinfo/properties/lastRefreshAttempt",
+                      "type": "string",
+                      "title": "The Lastrefreshattempt Schema",
+                      "default": "",
+                      "examples": [
+                        "2019-06-11T06:09:10Z"
+                      ],
+                      "pattern": "^(.*)$"
+                    },
+                    "statusMessage": {
+                      "$id": "#/properties/userData/items/properties/account/items/properties/refreshinfo/properties/statusMessage",
+                      "type": "string",
+                      "title": "The Statusmessage Schema",
+                      "default": "",
+                      "examples": [
+                        "OK"
+                      ],
+                      "pattern": "^(.*)$"
+                    },
+                    "statusCode": {
+                      "$id": "#/properties/userData/items/properties/account/items/properties/refreshinfo/properties/statusCode",
+                      "type": "integer",
+                      "title": "The Statuscode Schema",
+                      "default": 0,
+                      "examples": [
+                        0
+                      ]
+                    }
+                  }
+                },
+                "lastUpdated": {
+                  "$id": "#/properties/userData/items/properties/account/items/properties/lastUpdated",
+                  "type": "string",
+                  "title": "The Lastupdated Schema",
+                  "default": "",
+                  "examples": [
+                    "2019-06-11T06:09:10Z"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "isAsset": {
+                  "$id": "#/properties/userData/items/properties/account/items/properties/isAsset",
+                  "type": "boolean",
+                  "title": "The Isasset Schema",
+                  "default": false,
+                  "examples": [
+                    false
+                  ]
+                },
+                "aggregationSource": {
+                  "$id": "#/properties/userData/items/properties/account/items/properties/aggregationSource",
+                  "type": "string",
+                  "title": "The Aggregationsource Schema",
+                  "default": "",
+                  "examples": [
+                    "USER"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "balance": {
+                  "$id": "#/properties/userData/items/properties/account/items/properties/balance",
+                  "type": "object",
+                  "title": "The Balance Schema",
+                  "required": [
+                    "amount",
+                    "currency"
+                  ],
+                  "properties": {
+                    "amount": {
+                      "$id": "#/properties/userData/items/properties/account/items/properties/balance/properties/amount",
+                      "type": "number",
+                      "title": "The Amount Schema",
+                      "default": 0.0,
+                      "examples": [
+                        20022.86
+                      ]
+                    },
+                    "currency": {
+                      "$id": "#/properties/userData/items/properties/account/items/properties/balance/properties/currency",
+                      "type": "string",
+                      "title": "The Currency Schema",
+                      "default": "",
+                      "examples": [
+                        "USD"
+                      ],
+                      "pattern": "^(.*)$"
+                    }
+                  }
+                },
+                "isDeleted": {
+                  "$id": "#/properties/userData/items/properties/account/items/properties/isDeleted",
+                  "type": "boolean",
+                  "title": "The Isdeleted Schema",
+                  "default": false,
+                  "examples": [
+                    false
+                  ]
+                },
+                "totalCashLimit": {
+                  "$id": "#/properties/userData/items/properties/account/items/properties/totalCashLimit",
+                  "type": "object",
+                  "title": "The Totalcashlimit Schema",
+                  "required": [
+                    "amount",
+                    "currency"
+                  ],
+                  "properties": {
+                    "amount": {
+                      "$id": "#/properties/userData/items/properties/account/items/properties/totalCashLimit/properties/amount",
+                      "type": "integer",
+                      "title": "The Amount Schema",
+                      "default": 0,
+                      "examples": [
+                        5500
+                      ]
+                    },
+                    "currency": {
+                      "$id": "#/properties/userData/items/properties/account/items/properties/totalCashLimit/properties/currency",
+                      "type": "string",
+                      "title": "The Currency Schema",
+                      "default": "",
+                      "examples": [
+                        "USD"
+                      ],
+                      "pattern": "^(.*)$"
+                    }
+                  }
+                },
+                "providerId": {
+                  "$id": "#/properties/userData/items/properties/account/items/properties/providerId",
+                  "type": "string",
+                  "title": "The Providerid Schema",
+                  "default": "",
+                  "examples": [
+                    "16441"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "lastPaymentDate": {
+                  "$id": "#/properties/userData/items/properties/account/items/properties/lastPaymentDate",
+                  "type": "string",
+                  "title": "The Lastpaymentdate Schema",
+                  "default": "",
+                  "examples": [
+                    "2018-10-03"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "lastPaymentAmount": {
+                  "$id": "#/properties/userData/items/properties/account/items/properties/lastPaymentAmount",
+                  "type": "object",
+                  "title": "The Lastpaymentamount Schema",
+                  "required": [
+                    "amount",
+                    "currency"
+                  ],
+                  "properties": {
+                    "amount": {
+                      "$id": "#/properties/userData/items/properties/account/items/properties/lastPaymentAmount/properties/amount",
+                      "type": "integer",
+                      "title": "The Amount Schema",
+                      "default": 0,
+                      "examples": [
+                        12912
+                      ]
+                    },
+                    "currency": {
+                      "$id": "#/properties/userData/items/properties/account/items/properties/lastPaymentAmount/properties/currency",
+                      "type": "string",
+                      "title": "The Currency Schema",
+                      "default": "",
+                      "examples": [
+                        "USD"
+                      ],
+                      "pattern": "^(.*)$"
+                    }
+                  }
+                },
+                "id": {
+                  "$id": "#/properties/userData/items/properties/account/items/properties/id",
+                  "type": "integer",
+                  "title": "The Id Schema",
+                  "default": 0,
+                  "examples": [
+                    11410863
+                  ]
+                },
+                "totalCreditLine": {
+                  "$id": "#/properties/userData/items/properties/account/items/properties/totalCreditLine",
+                  "type": "object",
+                  "title": "The Totalcreditline Schema",
+                  "required": [
+                    "amount",
+                    "currency"
+                  ],
+                  "properties": {
+                    "amount": {
+                      "$id": "#/properties/userData/items/properties/account/items/properties/totalCreditLine/properties/amount",
+                      "type": "integer",
+                      "title": "The Amount Schema",
+                      "default": 0,
+                      "examples": [
+                        22000
+                      ]
+                    },
+                    "currency": {
+                      "$id": "#/properties/userData/items/properties/account/items/properties/totalCreditLine/properties/currency",
+                      "type": "string",
+                      "title": "The Currency Schema",
+                      "default": "",
+                      "examples": [
+                        "USD"
+                      ],
+                      "pattern": "^(.*)$"
+                    }
+                  }
+                },
+                "providerName": {
+                  "$id": "#/properties/userData/items/properties/account/items/properties/providerName",
+                  "type": "string",
+                  "title": "The Providername Schema",
+                  "default": "",
+                  "examples": [
+                    "Dag Site"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "minimumAmountDue": {
+                  "$id": "#/properties/userData/items/properties/account/items/properties/minimumAmountDue",
+                  "type": "object",
+                  "title": "The Minimumamountdue Schema",
+                  "required": [
+                    "amount",
+                    "currency"
+                  ],
+                  "properties": {
+                    "amount": {
+                      "$id": "#/properties/userData/items/properties/account/items/properties/minimumAmountDue/properties/amount",
+                      "type": "integer",
+                      "title": "The Amount Schema",
+                      "default": 0,
+                      "examples": [
+                        355
+                      ]
+                    },
+                    "currency": {
+                      "$id": "#/properties/userData/items/properties/account/items/properties/minimumAmountDue/properties/currency",
+                      "type": "string",
+                      "title": "The Currency Schema",
+                      "default": "",
+                      "examples": [
+                        "USD"
+                      ],
+                      "pattern": "^(.*)$"
+                    }
+                  }
+                },
+                "apr": {
+                  "$id": "#/properties/userData/items/properties/account/items/properties/apr",
+                  "type": "number",
+                  "title": "The Apr Schema",
+                  "default": 0.0,
+                  "examples": [
+                    19.99
+                  ]
+                },
+                "availableCredit": {
+                  "$id": "#/properties/userData/items/properties/account/items/properties/availableCredit",
+                  "type": "object",
+                  "title": "The Availablecredit Schema",
+                  "required": [
+                    "amount",
+                    "currency"
+                  ],
+                  "properties": {
+                    "amount": {
+                      "$id": "#/properties/userData/items/properties/account/items/properties/availableCredit/properties/amount",
+                      "type": "number",
+                      "title": "The Amount Schema",
+                      "default": 0.0,
+                      "examples": [
+                        1927.14
+                      ]
+                    },
+                    "currency": {
+                      "$id": "#/properties/userData/items/properties/account/items/properties/availableCredit/properties/currency",
+                      "type": "string",
+                      "title": "The Currency Schema",
+                      "default": "",
+                      "examples": [
+                        "USD"
+                      ],
+                      "pattern": "^(.*)$"
+                    }
+                  }
+                },
+                "holderProfile": {
+                  "$id": "#/properties/userData/items/properties/account/items/properties/holderProfile",
+                  "type": "array",
+                  "title": "The Holderprofile Schema",
+                  "items": {
+                    "$id": "#/properties/userData/items/properties/account/items/properties/holderProfile/items",
+                    "type": "object",
+                    "title": "The Items Schema",
+                    "required": [
+                      "name"
+                    ],
+                    "properties": {
+                      "name": {
+                        "$id": "#/properties/userData/items/properties/account/items/properties/holderProfile/items/properties/name",
+                        "type": "object",
+                        "title": "The Name Schema",
+                        "required": [
+                          "displayed"
+                        ],
+                        "properties": {
+                          "displayed": {
+                            "$id": "#/properties/userData/items/properties/account/items/properties/holderProfile/items/properties/name/properties/displayed",
+                            "type": "string",
+                            "title": "The Displayed Schema",
+                            "default": "",
+                            "examples": [
+                              "Robin"
+                            ],
+                            "pattern": "^(.*)$"
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "accountType": {
+                  "$id": "#/properties/userData/items/properties/account/items/properties/accountType",
+                  "type": "string",
+                  "title": "The Accounttype Schema",
+                  "default": "",
+                  "examples": [
+                    "CREDIT"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "isManual": {
+                  "$id": "#/properties/userData/items/properties/account/items/properties/isManual",
+                  "type": "boolean",
+                  "title": "The Ismanual Schema",
+                  "default": false,
+                  "examples": [
+                    false
+                  ]
+                },
+                "classification": {
+                  "$id": "#/properties/userData/items/properties/account/items/properties/classification",
+                  "type": "string",
+                  "title": "The Classification Schema",
+                  "default": "",
+                  "examples": [
+                    "PERSONAL"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "accountNumber": {
+                  "$id": "#/properties/userData/items/properties/account/items/properties/accountNumber",
+                  "type": "string",
+                  "title": "The Accountnumber Schema",
+                  "default": "",
+                  "examples": [
+                    "xxxx9806"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "amountDue": {
+                  "$id": "#/properties/userData/items/properties/account/items/properties/amountDue",
+                  "type": "object",
+                  "title": "The Amountdue Schema",
+                  "required": [
+                    "amount",
+                    "currency"
+                  ],
+                  "properties": {
+                    "amount": {
+                      "$id": "#/properties/userData/items/properties/account/items/properties/amountDue/properties/amount",
+                      "type": "number",
+                      "title": "The Amount Schema",
+                      "default": 0.0,
+                      "examples": [
+                        17741.3
+                      ]
+                    },
+                    "currency": {
+                      "$id": "#/properties/userData/items/properties/account/items/properties/amountDue/properties/currency",
+                      "type": "string",
+                      "title": "The Currency Schema",
+                      "default": "",
+                      "examples": [
+                        "USD"
+                      ],
+                      "pattern": "^(.*)$"
+                    }
+                  }
+                },
+                "createdDate": {
+                  "$id": "#/properties/userData/items/properties/account/items/properties/createdDate",
+                  "type": "string",
+                  "title": "The Createddate Schema",
+                  "default": "",
+                  "examples": [
+                    "2019-06-11T06:09:11Z"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "providerAccountId": {
+                  "$id": "#/properties/userData/items/properties/account/items/properties/providerAccountId",
+                  "type": "integer",
+                  "title": "The Provideraccountid Schema",
+                  "default": 0,
+                  "examples": [
+                    454475
+                  ]
+                },
+                "CONTAINER": {
+                  "$id": "#/properties/userData/items/properties/account/items/properties/CONTAINER",
+                  "type": "string",
+                  "title": "The Container Schema",
+                  "default": "",
+                  "examples": [
+                    "creditCard"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "runningBalance": {
+                  "$id": "#/properties/userData/items/properties/account/items/properties/runningBalance",
+                  "type": "object",
+                  "title": "The Runningbalance Schema",
+                  "required": [
+                    "amount",
+                    "currency"
+                  ],
+                  "properties": {
+                    "amount": {
+                      "$id": "#/properties/userData/items/properties/account/items/properties/runningBalance/properties/amount",
+                      "type": "number",
+                      "title": "The Amount Schema",
+                      "default": 0.0,
+                      "examples": [
+                        20022.86
+                      ]
+                    },
+                    "currency": {
+                      "$id": "#/properties/userData/items/properties/account/items/properties/runningBalance/properties/currency",
+                      "type": "string",
+                      "title": "The Currency Schema",
+                      "default": "",
+                      "examples": [
+                        "USD"
+                      ],
+                      "pattern": "^(.*)$"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "transaction": {
+            "$id": "#/properties/userData/items/properties/transaction",
+            "type": "array",
+            "title": "The Transaction Schema",
+            "items": {
+              "$id": "#/properties/userData/items/properties/transaction/items",
+              "type": "object",
+              "title": "The Items Schema",
+              "required": [
+                "date",
+                "amount",
+                "highLevelCategoryId",
+                "isManual",
+                "description",
+                "merchant",
+                "isRecurring",
+                "type",
+                "transactionDate",
+                "baseType",
+                "categoryType",
+                "categorySource",
+                "lastUpdated",
+                "accountId",
+                "createdDate",
+                "isDeleted",
+                "sourceType",
+                "CONTAINER",
+                "subType",
+                "id",
+                "category",
+                "categoryId",
+                "status"
+              ],
+              "properties": {
+                "date": {
+                  "$id": "#/properties/userData/items/properties/transaction/items/properties/date",
+                  "type": "string",
+                  "title": "The Date Schema",
+                  "default": "",
+                  "examples": [
+                    "2018-10-20"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "amount": {
+                  "$id": "#/properties/userData/items/properties/transaction/items/properties/amount",
+                  "type": "object",
+                  "title": "The Amount Schema",
+                  "required": [
+                    "amount",
+                    "currency"
+                  ],
+                  "properties": {
+                    "amount": {
+                      "$id": "#/properties/userData/items/properties/transaction/items/properties/amount/properties/amount",
+                      "type": "integer",
+                      "title": "The Amount Schema",
+                      "default": 0,
+                      "examples": [
+                        188
+                      ]
+                    },
+                    "currency": {
+                      "$id": "#/properties/userData/items/properties/transaction/items/properties/amount/properties/currency",
+                      "type": "string",
+                      "title": "The Currency Schema",
+                      "default": "",
+                      "examples": [
+                        "USD"
+                      ],
+                      "pattern": "^(.*)$"
+                    }
+                  }
+                },
+                "highLevelCategoryId": {
+                  "$id": "#/properties/userData/items/properties/transaction/items/properties/highLevelCategoryId",
+                  "type": "integer",
+                  "title": "The Highlevelcategoryid Schema",
+                  "default": 0,
+                  "examples": [
+                    10000004
+                  ]
+                },
+                "isManual": {
+                  "$id": "#/properties/userData/items/properties/transaction/items/properties/isManual",
+                  "type": "boolean",
+                  "title": "The Ismanual Schema",
+                  "default": false,
+                  "examples": [
+                    false
+                  ]
+                },
+                "description": {
+                  "$id": "#/properties/userData/items/properties/transaction/items/properties/description",
+                  "type": "object",
+                  "title": "The Description Schema",
+                  "required": [
+                    "original",
+                    "simple"
+                  ],
+                  "properties": {
+                    "original": {
+                      "$id": "#/properties/userData/items/properties/transaction/items/properties/description/properties/original",
+                      "type": "string",
+                      "title": "The Original Schema",
+                      "default": "",
+                      "examples": [
+                        "LOWE'S OF HURST, TX HURST TX"
+                      ],
+                      "pattern": "^(.*)$"
+                    },
+                    "simple": {
+                      "$id": "#/properties/userData/items/properties/transaction/items/properties/description/properties/simple",
+                      "type": "string",
+                      "title": "The Simple Schema",
+                      "default": "",
+                      "examples": [
+                        "Lowe's Hurst TX"
+                      ],
+                      "pattern": "^(.*)$"
+                    }
+                  }
+                },
+                "merchant": {
+                  "$id": "#/properties/userData/items/properties/transaction/items/properties/merchant",
+                  "type": "object",
+                  "title": "The Merchant Schema",
+                  "required": [
+                    "address",
+                    "name",
+                    "categoryLabel",
+                    "coordinates",
+                    "id",
+                    "source"
+                  ],
+                  "properties": {
+                    "address": {
+                      "$id": "#/properties/userData/items/properties/transaction/items/properties/merchant/properties/address",
+                      "type": "object",
+                      "title": "The Address Schema",
+                      "required": [
+                        "country",
+                        "city",
+                        "state"
+                      ],
+                      "properties": {
+                        "country": {
+                          "$id": "#/properties/userData/items/properties/transaction/items/properties/merchant/properties/address/properties/country",
+                          "type": "string",
+                          "title": "The Country Schema",
+                          "default": "",
+                          "examples": [
+                            "US"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "city": {
+                          "$id": "#/properties/userData/items/properties/transaction/items/properties/merchant/properties/address/properties/city",
+                          "type": "string",
+                          "title": "The City Schema",
+                          "default": "",
+                          "examples": [
+                            "Hurst"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "state": {
+                          "$id": "#/properties/userData/items/properties/transaction/items/properties/merchant/properties/address/properties/state",
+                          "type": "string",
+                          "title": "The State Schema",
+                          "default": "",
+                          "examples": [
+                            "TX"
+                          ],
+                          "pattern": "^(.*)$"
+                        }
+                      }
+                    },
+                    "name": {
+                      "$id": "#/properties/userData/items/properties/transaction/items/properties/merchant/properties/name",
+                      "type": "string",
+                      "title": "The Name Schema",
+                      "default": "",
+                      "examples": [
+                        "Lowe's"
+                      ],
+                      "pattern": "^(.*)$"
+                    },
+                    "categoryLabel": {
+                      "$id": "#/properties/userData/items/properties/transaction/items/properties/merchant/properties/categoryLabel",
+                      "type": "array",
+                      "title": "The Categorylabel Schema",
+                      "items": {
+                        "$id": "#/properties/userData/items/properties/transaction/items/properties/merchant/properties/categoryLabel/items",
+                        "type": "string",
+                        "title": "The Items Schema",
+                        "default": "",
+                        "examples": [
+                          "Home Improvement"
+                        ],
+                        "pattern": "^(.*)$"
+                      }
+                    },
+                    "coordinates": {
+                      "$id": "#/properties/userData/items/properties/transaction/items/properties/merchant/properties/coordinates",
+                      "type": "object",
+                      "title": "The Coordinates Schema",
+                      "required": [
+                        "latitude",
+                        "longitude"
+                      ],
+                      "properties": {
+                        "latitude": {
+                          "$id": "#/properties/userData/items/properties/transaction/items/properties/merchant/properties/coordinates/properties/latitude",
+                          "type": "integer",
+                          "title": "The Latitude Schema",
+                          "default": 0,
+                          "examples": [
+                            0
+                          ]
+                        },
+                        "longitude": {
+                          "$id": "#/properties/userData/items/properties/transaction/items/properties/merchant/properties/coordinates/properties/longitude",
+                          "type": "integer",
+                          "title": "The Longitude Schema",
+                          "default": 0,
+                          "examples": [
+                            0
+                          ]
+                        }
+                      }
+                    },
+                    "id": {
+                      "$id": "#/properties/userData/items/properties/transaction/items/properties/merchant/properties/id",
+                      "type": "string",
+                      "title": "The Id Schema",
+                      "default": "",
+                      "examples": [
+                        "2080"
+                      ],
+                      "pattern": "^(.*)$"
+                    },
+                    "source": {
+                      "$id": "#/properties/userData/items/properties/transaction/items/properties/merchant/properties/source",
+                      "type": "string",
+                      "title": "The Source Schema",
+                      "default": "",
+                      "examples": [
+                        "YODLEE"
+                      ],
+                      "pattern": "^(.*)$"
+                    }
+                  }
+                },
+                "isRecurring": {
+                  "$id": "#/properties/userData/items/properties/transaction/items/properties/isRecurring",
+                  "type": "boolean",
+                  "title": "The Isrecurring Schema",
+                  "default": false,
+                  "examples": [
+                    false
+                  ]
+                },
+                "type": {
+                  "$id": "#/properties/userData/items/properties/transaction/items/properties/type",
+                  "type": "string",
+                  "title": "The Type Schema",
+                  "default": "",
+                  "examples": [
+                    "PURCHASE"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "transactionDate": {
+                  "$id": "#/properties/userData/items/properties/transaction/items/properties/transactionDate",
+                  "type": "string",
+                  "title": "The Transactiondate Schema",
+                  "default": "",
+                  "examples": [
+                    "2018-10-20"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "baseType": {
+                  "$id": "#/properties/userData/items/properties/transaction/items/properties/baseType",
+                  "type": "string",
+                  "title": "The Basetype Schema",
+                  "default": "",
+                  "examples": [
+                    "DEBIT"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "categoryType": {
+                  "$id": "#/properties/userData/items/properties/transaction/items/properties/categoryType",
+                  "type": "string",
+                  "title": "The Categorytype Schema",
+                  "default": "",
+                  "examples": [
+                    "EXPENSE"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "categorySource": {
+                  "$id": "#/properties/userData/items/properties/transaction/items/properties/categorySource",
+                  "type": "string",
+                  "title": "The Categorysource Schema",
+                  "default": "",
+                  "examples": [
+                    "SYSTEM"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "lastUpdated": {
+                  "$id": "#/properties/userData/items/properties/transaction/items/properties/lastUpdated",
+                  "type": "string",
+                  "title": "The Lastupdated Schema",
+                  "default": "",
+                  "examples": [
+                    "2019-06-11T06:09:10Z"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "accountId": {
+                  "$id": "#/properties/userData/items/properties/transaction/items/properties/accountId",
+                  "type": "integer",
+                  "title": "The Accountid Schema",
+                  "default": 0,
+                  "examples": [
+                    11410863
+                  ]
+                },
+                "createdDate": {
+                  "$id": "#/properties/userData/items/properties/transaction/items/properties/createdDate",
+                  "type": "string",
+                  "title": "The Createddate Schema",
+                  "default": "",
+                  "examples": [
+                    "2019-06-11T06:09:10Z"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "isDeleted": {
+                  "$id": "#/properties/userData/items/properties/transaction/items/properties/isDeleted",
+                  "type": "boolean",
+                  "title": "The Isdeleted Schema",
+                  "default": false,
+                  "examples": [
+                    false
+                  ]
+                },
+                "sourceType": {
+                  "$id": "#/properties/userData/items/properties/transaction/items/properties/sourceType",
+                  "type": "string",
+                  "title": "The Sourcetype Schema",
+                  "default": "",
+                  "examples": [
+                    "AGGREGATED"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "CONTAINER": {
+                  "$id": "#/properties/userData/items/properties/transaction/items/properties/CONTAINER",
+                  "type": "string",
+                  "title": "The Container Schema",
+                  "default": "",
+                  "examples": [
+                    "creditCard"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "subType": {
+                  "$id": "#/properties/userData/items/properties/transaction/items/properties/subType",
+                  "type": "string",
+                  "title": "The Subtype Schema",
+                  "default": "",
+                  "examples": [
+                    "PURCHASE"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "id": {
+                  "$id": "#/properties/userData/items/properties/transaction/items/properties/id",
+                  "type": "integer",
+                  "title": "The Id Schema",
+                  "default": 0,
+                  "examples": [
+                    11074381
+                  ]
+                },
+                "category": {
+                  "$id": "#/properties/userData/items/properties/transaction/items/properties/category",
+                  "type": "string",
+                  "title": "The Category Schema",
+                  "default": "",
+                  "examples": [
+                    "Home Improvement"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "categoryId": {
+                  "$id": "#/properties/userData/items/properties/transaction/items/properties/categoryId",
+                  "type": "integer",
+                  "title": "The Categoryid Schema",
+                  "default": 0,
+                  "examples": [
+                    13
+                  ]
+                },
+                "status": {
+                  "$id": "#/properties/userData/items/properties/transaction/items/properties/status",
+                  "type": "string",
+                  "title": "The Status Schema",
+                  "default": "",
+                  "examples": [
+                    "POSTED"
+                  ],
+                  "pattern": "^(.*)$"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
