@@ -13,6 +13,7 @@ public class RestControllerTest {
 		HashMap<String, Object> map = new HashMap<String, Object>();
 		map.put("name", "ravi Narayan");
 		map.put("age", 30);
+		map.put("arr", new int[]{3,4,5});
 		
 		return map;
 	}
